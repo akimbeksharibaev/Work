@@ -14,13 +14,19 @@ bot = Bot(token=Token)
 async def start(message:Message):
     await message.answer(f"Assalawmagaleykum {message.from_user.first_name} \nXosh kelibsiz")
 
-@dp.message(Command())
+
+@dp.message(Command('settings'))
 async def settings(message:Message):
     await message.answer(f"Sazlamalar")
 
-@dp.message(Command())
+@dp.message(Command('channels'))
 async def channels(message:Message):
     await message.answer(f"Kanallar")
+
+@dp.message(Command('tel'))
+async def tel(message:Message):
+    await message.answer(f"Sorawlar boyinsha tomendegi nomerge xabarlassaniz boladi. \n+998997654321")
+
 
 async def main():
     print('bot iske qosildi..')
