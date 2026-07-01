@@ -27,6 +27,14 @@ async def channels(message:Message):
 async def tel(message:Message):
     await message.answer(f"Sorawlar boyinsha tomendegi nomerge xabarlassaniz boladi. \n+998997654321")
 
+@dp.message(Command('help'))
+async def help(message:Message):
+    await message.answer(f"Can I help you?")
+ 
+@dp.message(Command('info'))
+async def channels(message:Message):
+    await message.answer(f"Bot haqqinda informatsiya biliwdi qaleysizba?")    
+
 
 async def main():
     print('bot iske qosildi..')
