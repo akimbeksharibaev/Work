@@ -12,7 +12,7 @@ bot = Bot(token=Token)
 
 @dp.message(CommandStart())
 async def start(message:Message):
-    await message.answer(f"Assalawmagaleykum {message.from_user.first_name} \nXosh kelibsiz")
+    await message.answer(f"Assalawmagaleykum {message.from_user.first_name} \nXosh kelibsiz \n /settings - Sazlamalar \n /channels -Kanallar")
 
 
 @dp.message(Command('settings'))
