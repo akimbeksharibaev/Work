@@ -33,7 +33,15 @@ async def help(message:Message):
  
 @dp.message(Command('info'))
 async def channels(message:Message):
-    await message.answer(f"Bot haqqinda informatsiya biliwdi qaleysizba?")    
+    await message.answer(f"Bot haqqinda informatsiya biliwdi qaleysizba?")
+
+@dp.message(Command('ofis'))
+async def channels(message:Message):
+    await message.answer(f"Qaraqalpaqstan koshe")
+
+@dp.message(Command('job'))
+async def channels(message:Message):
+    await message.answer(f"Jimis")
 
 
 async def main():
